@@ -17,31 +17,32 @@
             </div>
             <div class="calc-field">
                 <div class="calc-field__header">
-                    <input class="calc-field__header-input" placeholder="Result" type="text">
+                    <input class="calc-field__header-input" placeholder="Result" type="text" id="result">
                     <input class="calc-field__header-btn" type="button" value="C">
                 </div>
 
                 <div class="calc-field__buttons">
-                    <input class="calc-field__buttons-btn" type="button" value="2">
-                    <input class="calc-field__buttons-btn" type="button" value="1">
-                    <input class="calc-field__buttons-btn" type="button" value="3">
-                    <input class="calc-field__buttons-btn" type="button" value="+">
-                    <input class="calc-field__buttons-btn" type="button" value="4">
-                    <input class="calc-field__buttons-btn" type="button" value="5">
-                    <input class="calc-field__buttons-btn" type="button" value="6">
-                    <input class="calc-field__buttons-btn" type="button" value="-">
-                    <input class="calc-field__buttons-btn" type="button" value="7">
-                    <input class="calc-field__buttons-btn" type="button" value="8">
-                    <input class="calc-field__buttons-btn" type="button" value="9">
-                    <input class="calc-field__buttons-btn" type="button" value="x">
-                    <input class="calc-field__buttons-btn" type="button" value="/">
-                    <input class="calc-field__buttons-btn" type="button" value="0">
-                    <input class="calc-field__buttons-btn" type="button" value=".">
-                    <input class="calc-field__buttons-btn" type="button" value="=">                
+                    <input class="calc-field__buttons-btn" id="btn1" type="button" value="1" onclick="display('1')">
+                    <input class="calc-field__buttons-btn" id="btn2" type="button" value="2" onclick="display('2')">
+                    <input class="calc-field__buttons-btn" id="btn3" type="button" value="3" onclick="display('3')">
+                    <input class="calc-field__buttons-btn" id="btn+" type="button" value="+" onclick="display('+')">
+                    <input class="calc-field__buttons-btn" id="btn4" type="button" value="4" onclick="display('4')">
+                    <input class="calc-field__buttons-btn" id="btn5" type="button" value="5" onclick="display('5')">
+                    <input class="calc-field__buttons-btn" id="btn6" type="button" value="6" onclick="display('6')">
+                    <input class="calc-field__buttons-btn" id="btn-" type="button" value="-" onclick="display('-')">
+                    <input class="calc-field__buttons-btn" id="btn7" type="button" value="7" onclick="display('7')">
+                    <input class="calc-field__buttons-btn" id="btn8" type="button" value="8" onclick="display('8')">
+                    <input class="calc-field__buttons-btn" id="btn9" type="button" value="9" onclick="display('9')">
+                    <input class="calc-field__buttons-btn" id="btnx" type="button" value="*" onclick="display('*')">
+                    <input class="calc-field__buttons-btn" id="btn/" type="button" value="/" onclick="display('/')">
+                    <input class="calc-field__buttons-btn" id="btn0" type="button" value="0" onclick="display('0')" onkeydown="pressWithKey(event)">
+                    <input class="calc-field__buttons-btn" id="btn." type="button" value="." onclick="display('.')">
+                    <input class="calc-field__buttons-btn" id="btn=" type="button" value="=" onclick="solve()">                
                 </div>
             </div>
         </div>
     </div>
+    <script src="/script.js"></script>
     
 </body>
 </html>

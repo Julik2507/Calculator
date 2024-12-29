@@ -7,6 +7,9 @@ body {
     color: white;
 }
 
+p {
+    margin: 0px;
+}
 .wrapper {
     height: 100vh;
     display: flex;
@@ -20,28 +23,19 @@ body {
     width: 400px;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     height: 561px;
-    /* background-color: rgb(189, 123, 123); */
     gap: 10px; 
 }
 
 .title {
     display: flex;
     justify-content: center;
-    /* background-color: red; */
-}
-
-p {
-    margin: 0px;
 }
 
 .calc-field {
     display: flex;
     flex-direction: column;
-    /* flex-grow: 1;  */
     color: rgb(191, 179, 179);
-
 }
 
 .calc-field__header {
@@ -60,7 +54,6 @@ p {
     background-color: rgb(68, 64, 64);    
     color: rgb(191, 179, 179);
     font-size: 18px;
-
 }
 
 .calc-field__header-btn {
@@ -72,15 +65,13 @@ p {
 }
 
 .calc-field__header-btn:hover {
-    background-color: rgb(226, 53, 53);
-
+    background-color: rgb(221, 69, 69);
 }
 
 .calc-field__buttons {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 5px;
-    
 }
 
 .calc-field__buttons-btn {
@@ -90,8 +81,8 @@ p {
     background-color: rgb(68, 64, 64);
     color: rgb(191, 179, 179);
     font-size: 18px;
-
 }
+
 .calc-field__buttons-btn:hover {
     background-color: rgb(96, 90, 90);
 }
