@@ -7,8 +7,10 @@ function display(value) {
 }
 
 function solve() {
-    let result = eval(inputEl.value);
-    inputEl.value=result;    
+    if(inputEl.value.length) {
+        let result = eval(inputEl.value);
+        inputEl.value=result;    
+    }
 }
 
 btnElClear.addEventListener("click", () =>  {
@@ -16,9 +18,32 @@ btnElClear.addEventListener("click", () =>  {
 })
 
 function pressWithKey(event) {
-    console.log(event);
-    
-    if(event.key == '0') {
-        inputEl.value += event.key;
+
+    switch(event.key) {
+        case '0':
+        case '1':
+        case '2':
+        case '3':
+        case '4':
+        case '5':
+        case '6':
+        case '7':
+        case '8':
+        case '9':
+        case '+':
+        case '-':
+        case '*':
+        case '/':
+        case '.':
+            inputEl.value+=event.key;
+            break;
+        case "Enter":
+            solve();
+            break;
+        case "Backspace":
+            inputEl.value=''
+            break;
     }
 }
+
+document.addEventListener("keydown", pressWithKey);

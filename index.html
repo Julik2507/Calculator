@@ -17,7 +17,7 @@
             </div>
             <div class="calc-field">
                 <div class="calc-field__header">
-                    <input class="calc-field__header-input" placeholder="Result" type="text" id="result">
+                    <input class="calc-field__header-input" placeholder="Result" type="text" id="result" readonly="true">
                     <input class="calc-field__header-btn" type="button" value="C">
                 </div>
 
@@ -35,7 +35,7 @@
                     <input class="calc-field__buttons-btn" id="btn9" type="button" value="9" onclick="display('9')">
                     <input class="calc-field__buttons-btn" id="btnx" type="button" value="*" onclick="display('*')">
                     <input class="calc-field__buttons-btn" id="btn/" type="button" value="/" onclick="display('/')">
-                    <input class="calc-field__buttons-btn" id="btn0" type="button" value="0" onclick="display('0')" onkeydown="pressWithKey(event)">
+                    <input class="calc-field__buttons-btn" id="btn0" type="button" value="0" onclick="display('0')">
                     <input class="calc-field__buttons-btn" id="btn." type="button" value="." onclick="display('.')">
                     <input class="calc-field__buttons-btn" id="btn=" type="button" value="=" onclick="solve()">                
                 </div>
